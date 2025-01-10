@@ -9,9 +9,10 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .header-content {
@@ -110,85 +111,133 @@ header {
     color: #007BFF;
 }
 
-/* Seção Serviços */
-#servicos {
-    padding: 40px 20px;
-    background: #f4f4f4;
-    text-align: center;
+/* Seção de Grupos de Interesse */
+#grupos-interesse {
+    margin: 30px 0;
 }
 
-#servicos h2 {
-    font-size: 2em;
+#grupos-interesse h2 {
+    text-align: center;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.service-container {
+.grid-grupos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.service-card {
-    background: linear-gradient(145deg, #ffffff, #f3f3f3);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 330px;
-}
-
-.service-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(145deg, #f0f8ff, #e6f7ff);
-}
-
-.service-card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd;
+.card-grupo {
     background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.service-card h3 {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-    color: #007BFF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.card-grupo h3 {
+    font-size: 20px;
+    color: #4CAF50;
 }
 
-.service-card p {
-    font-size: 0.9em;
+.card-grupo p {
+    font-size: 14px;
     color: #555;
-    padding: 0 10px 10px;
-    line-height: 1.5;
 }
 
-.service-card a {
-    display: inline-block;
-    margin: 10px auto;
-    padding: 8px 15px;
-    background-color: #32CD32;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 0.9em;
+/* Seção de Cadastro */
+#cadastro-grupo {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#cadastro-grupo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-.service-card a:hover {
-    background-color: #228B22;
-    transform: scale(1.1);
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+}
+
+/* Pagamento PIX */
+#pagamento-pix {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+/* Centralizar o corpo do main */
+.centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Botão de Voltar */
+.voltar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #45a049;
 }
 
 /* Seção Comentários */
@@ -407,14 +456,6 @@ footer {
     align-items: center;
 }
 
-.copyright {
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
 .social-icons a {
     margin: 0 10px;
 }
@@ -422,11 +463,6 @@ footer {
 .social-icons img {
     width: 24px;
     height: 24px;
-}
-
-.email-text {
-    margin-bottom: 10px;
-    font-size: 0.9em;
 }
 
 .email-text a {
@@ -551,4 +587,316 @@ footer {
     .service-card p {
         font-size: 0.85em;
     }
+}
+
+/* Botões */
+.btn-saiba-mais, .btn-voltar, .btn-destaque {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais {
+    background-color: #4CAF50;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #45a049;
+}
+
+.btn-voltar {
+    background-color: #555;
+}
+
+.btn-voltar:hover {
+    background-color: #333;
+}
+
+.btn-destaque {
+    background-color: #55c746;
+    color: #f5eeee;
+}
+
+.btn-destaque:hover {
+    background-color: #FFC107;
+}
+
+/* Seção Grupos de Estudos */
+#grupos-de-estudos {
+    background-color: #d7e2d7;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+#grupos-de-estudos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#grupos-de-estudos p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de Contato */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Seção Início */
+.inicio-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.welcome-content p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.welcome-content p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Seção Serviços */
+#servicos {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #45a049;
+}
+
+/* Estilo Geral do Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centralizar o texto */
+    padding: 10px 5px; /* Reduz o espaçamento interno */
+    font-size: 12px; /* Tamanho menor do texto */
+    line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+}
+
+/* Flexibilidade para texto e ícones no rodapé */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px; /* Espaçamento menor entre elementos */
+}
+
+/* Ajuste do texto de Copyright */
+.footer-container .copyright {
+    flex: 1;
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Ajuste para Ícones de Redes Sociais */
+.footer-container .social-icons {
+    display: flex;
+    gap: 10px; /* Espaço reduzido entre ícones */
+    justify-content: center;
+}
+
+.footer-container .social-icons img {
+    width: 20px; /* Ícones menores */
+    height: 20px;
+}
+
+/* Ajuste para o E-mail */
+.footer-container .email-text {
+    flex: 1;
+    text-align: right;
+    font-size: 12px; /* Texto menor */
+}
+
+.email-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Botão de Subir ao Topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
 }
