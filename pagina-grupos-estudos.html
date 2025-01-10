@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grupos de Estudos Profissionais</h1>
+        <p>
+            Participe dos nossos grupos de estudos por apenas 
+            <strong>R$ 59,90/mês</strong>, com acesso ilimitado a materiais, discussões e especialistas. 
+            Cancele a qualquer momento!
+        </p>
+    </header>
+
+    <main class="centralizado">
+        <!-- Seção de Seleção de Grupos -->
+        <section id="grupos-interesse">
+            <h2>Selecione o Grupo de Interesse</h2>
+            <div class="grid-grupos">
+                <div class="card-grupo">
+                    <h3>Psicoterapia Individual</h3>
+                    <p>Aprofunde-se em técnicas e práticas relacionadas à psicoterapia individual.</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Terapia de Casal</h3>
+                    <p>Aprenda mais sobre ferramentas e abordagens para trabalhar com casais.</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Terapia Familiar</h3>
+                    <p>Explore práticas para lidar com dinâmicas familiares e conflitos.</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Psicologia Infantil</h3>
+                    <p>Entenda mais sobre o desenvolvimento infantil e suas particularidades.</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Atendimento Online</h3>
+                    <p>Saiba como conduzir atendimentos eficazes e profissionais no formato virtual.</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Supervisão de Casos Clínicos</h3>
+                    <p>Discuta casos reais e receba orientação de especialistas na área.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Cadastro -->
+        <section id="cadastro-grupo">
+            <h2>Faça Parte Agora Mesmo</h2>
+            <p>
+                Inscreva-se no grupo de estudos e garanta acesso completo por apenas <strong>R$ 59,90/mês</strong>. 
+                Basta preencher o formulário abaixo e efetuar o pagamento via PIX.
+            </p>
+            <form id="form-cadastro">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="grupo">Grupo de Interesse:</label>
+                <select id="grupo" name="grupo" required>
+                    <option value="Psicoterapia Individual">Psicoterapia Individual</option>
+                    <option value="Terapia de Casal">Terapia de Casal</option>
+                    <option value="Terapia Familiar">Terapia Familiar</option>
+                    <option value="Psicologia Infantil">Psicologia Infantil</option>
+                    <option value="Atendimento Online">Atendimento Online</option>
+                    <option value="Supervisão de Casos Clínicos">Supervisão de Casos Clínicos</option>
+                </select>
+                
+                <button type="submit" class="btn">Finalizar Cadastro</button>
+            </form>
+
+            <!-- Pagamento via PIX -->
+            <div id="pagamento-pix">
+                <h3>Pagamento via PIX</h3>
+                <p>Escaneie o QR Code abaixo ou copie o código para concluir o pagamento:</p>
+                <img src="qrcode-pix.png" alt="QR Code para pagamento" class="qr-code">
+                <p><strong>Código PIX:</strong> abc123xyz456789</p>
+            </div>
+        </section>
+
+        <!-- Botão de Voltar -->
+        <div class="voltar">
+            <a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grupos de Estudos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
