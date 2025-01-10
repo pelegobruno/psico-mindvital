@@ -1,0 +1,565 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de Ação */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Seção Início */
+.inicio-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.welcome-content p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.welcome-content p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Seção Serviços */
+#servicos {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Seção Comentários */
+#comentarios {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#comentarios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.comment {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.comment p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #ff0;
+}
+
+.comment footer {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Seção Blog */
+#blog {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Artigos */
+#artigos {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#artigos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.article {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.article h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Profissionais */
+#profissionais {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#profissionais h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#profissionais p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Seção Contato */
+#contato {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contato button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: #555;
+}
+
+#mensagem-enviada {
+    display: none;
+    margin-top: 20px;
+    color: green;
+    font-size: 1em;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.email-text {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.email-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo do Mini Card de Contato */
+.contact-card {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.contact-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-card h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.contact-card textarea {
+    resize: none; /* Impede o redimensionamento */
+}
+
+.contact-card button.submit-btn {
+    padding: 10px 15px;
+    background-color: #32CD32; /* Verde limão */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-card button.submit-btn:hover {
+    background-color: #228B22; /* Verde mais escuro */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Mensagem de feedback */
+.contact-card #mensagem-enviada {
+    display: none;
+    margin-top: 15px;
+    color: green;
+    font-size: 0.9em;
+    text-align: center;
+}
+/* Estilo do Botão de Subir ao Topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #32CD32; /* Verde-limão */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Invisível por padrão */
+    visibility: hidden; /* Invisível para interação */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #228B22; /* Verde mais escuro */
+}
+
+/* Botão Visível */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* Container dos Serviços */
+.service-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: space-between; /* Espaçamento uniforme */
+    gap: 20px; /* Espaçamento entre os cards */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza na página */
+}
+/* Seção de Serviços */
+.services {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Container dos Cards */
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Aumentada a largura mínima */
+    gap: 30px; /* Espaço entre os cards */
+    max-width: 1400px; /* Ajuste para centralizar cards mais largos */
+    margin: 0 auto; /* Centraliza o container */
+  }
+  
+  /* Estilo dos Cards */
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagem dos Cards */
+  .service-card img {
+    width: 100%;
+    height: 200px; /* Tamanho fixo */
+    object-fit: cover; /* Imagem ajustada proporcionalmente */
+  }
+  
+  /* Títulos dos Serviços */
+  .service-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #32CD32; /* Verde-limão */
+  }
+  
+  /* Texto de Descrição */
+  .service-card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 20px;
+    line-height: 1.5;
+  }    

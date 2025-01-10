@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psico Mindvital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="caminho-do-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBVvo8rn_bgSO7j0sSn41HmPKxOJyRPr44Q&s" 
+                    alt="Logo Psico Mindvital" 
+                    class="logo"
+                >
+                <h1 class="site-title">Psico Mindvital</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#profissionais">Profissionais</a></li>
+                </ul>
+            </nav>
+            <!-- Botão de Contato -->
+            <button id="contact-button" class="cta-button">Entre em Contato</button>
+        </div>
+    </header>
+
+   <!-- Mini Card de Contato -->
+<div id="contact-card" class="contact-card">
+    <h2>Entre em Contato</h2>
+    <p>Preencha o formulário abaixo para enviar uma mensagem diretamente para nosso e-mail.</p>
+    <form action="https://formspree.io/f/xwppwwwb" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <div id="mensagem-enviada" style="display: none; color: green;">Sua mensagem foi enviada com sucesso!</div>
+</div>
+
+    <!-- Seção Início -->
+    <section id="inicio" class="inicio-section">
+        <div class="welcome-content">
+            <h2>Bem-vindo ao Psico Mindvital</h2>
+            <p>No Psico Mindvital, acreditamos na importância da saúde mental para uma vida plena e feliz. Oferecemos uma abordagem inovadora e personalizada para cada paciente, focando em suas necessidades e objetivos únicos. Se você está buscando respostas para questões que têm afetado sua vida ou precisa de suporte para superar desafios emocionais, estamos aqui para ajudar. Nossa equipe de profissionais dedicados está pronta para oferecer o melhor atendimento em psicologia, promovendo o bem-estar e a qualidade de vida.</p>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/26365408-femea-psicoterapeuta-tem-a-individual-sessao-com-dela-paciente-conversa-terapia-conceito-ilustracao-vetor.jpg" alt="Psicoterapia Individual">
+                <h3>Psicoterapia Individual</h3>
+                <p>Atendimento personalizado para suas necessidades.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://psicoter.com.br/wp-content/uploads/2024/05/terapia.png" alt="Terapia de Casal">
+                <h3>Terapia de Casal</h3>
+                <p>Fortaleça seu relacionamento com a ajuda de um profissional.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://pamelafreire.com.br/wp-content/uploads/2020/05/ilustracao-abstrata-de-videochamada-com-terapeuta_23-2148513212.jpg" alt="Atendimento Online">
+                <h3>Atendimento Online</h3>
+                <p>Conforto e conveniência de sua casa.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://media.istockphoto.com/id/1598933222/es/vector/pareja-de-ancianos-en-el-psic%C3%B3logo.jpg?s=612x612&w=0&k=20&c=MrK0VMmEKXdeYxrNLa6Dr5p002ANl0FhMWRQcPNsjBw=" alt="Terapia Familiar">
+                <h3>Terapia Familiar</h3>
+                <p>Melhore a comunicação e a dinâmica familiar.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.freepik.com/vetores-premium/conceito-de-psicoterapia-infantil_118813-828.jpg" alt="Terapia Infanto-Juvenil">
+                <h3>Terapia Infanto-Juvenil</h3>
+                <p>Apoio emocional e psicológico para crianças.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.freepik.com/vetores-premium/ilustracao-plana-de-amigos-do-grupo-de-estudo_418302-159.jpg" alt="Grupo de Estudos">
+                <h3>Grupo de Estudos</h3>
+                <p>Diagnósticos precisos para diferentes necessidades.</p>
+            </div>
+            <!-- Novos serviços -->
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1995/1995596.png" alt="Orientação Vocacional">
+                <h3>Orientação Vocacional</h3>
+                <p>Descubra seu potencial e escolha a carreira ideal para você.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2511/2511414.png" alt="Terapia Ocupacional">
+                <h3>Terapia Ocupacional</h3>
+                <p>Desenvolva habilidades e maximize seu potencial no dia a dia.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Supervisão Clínica">
+                <h3>Supervisão Clínica</h3>
+                <p>Mentoria especializada para profissionais da psicologia.</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Seção Comentários -->
+    <section id="comentarios">
+        <h2>Comentários</h2>
+        <div class="comment">
+            <p>"Psico Mindvital mudou minha vida! Os profissionais são incríveis."</p>
+            <div class="stars">★★★★★</div>
+            <footer>— Cliente Satisfeito</footer>
+        </div>
+        <div class="comment">
+            <p>"A terapia de casal salvou nosso casamento. Recomendo fortemente."</p>
+            <div class="stars">★★★★★</div>
+            <footer>— Cliente Satisfeito</footer>
+        </div>
+    </section>
+
+    <!-- Seção Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Como lidar com o estresse no trabalho</h3>
+            <p>Descubra estratégias eficazes para gerenciar o estresse e melhorar sua saúde mental no ambiente de trabalho.</p>
+            <a href="#">Leia mais</a>
+        </div>
+        <div class="blog-post">
+            <h3>A importância da terapia familiar</h3>
+            <p>Entenda como a terapia familiar pode fortalecer os laços e melhorar a comunicação entre os membros da família.</p>
+            <a href="#">Leia mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Artigos -->
+    <section id="artigos">
+        <h2>Artigos</h2>
+        <div class="article">
+            <h3>Artigo 1: A importância da saúde mental</h3>
+            <p>Explore como a saúde mental impacta todos os aspectos da vida e por que é crucial cuidar dela.</p>
+            <a href="#">Leia mais</a>
+        </div>
+        <div class="article">
+            <h3>Artigo 2: Benefícios da meditação</h3>
+            <p>Aprenda como a meditação pode ajudar a reduzir o estresse e melhorar o bem-estar geral.</p>
+            <a href="#">Leia mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Profissionais -->
+    <section id="profissionais">
+        <h2>Nossa Equipe</h2>
+        <p>Conheça os especialistas do Psico Mindvital que estão prontos para te ajudar.</p>
+    </section>
+
+    <!-- Seção Chamada para Grupos de Estudos -->
+    <section id="grupos-estudos" style="padding: 50px; background-color: #f9f9f9; text-align: center;">
+        <h2>Venha para Grupos de Estudos</h2>
+        <p>Participe de nossos grupos de estudos e fortaleça seu conhecimento.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer style="padding: 20px; background-color: #333; color: #fff; text-align: center;">
+        <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <!-- Texto de Copyright -->
+            <div class="copyright" style="margin-bottom: 10px;">
+                © 2025 Psico Mindvital. Todos os direitos reservados.
+            </div>
+            <!-- Redes Sociais -->
+            <div class="social-icons" style="margin-bottom: 10px;">
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" title="Instagram" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" title="LinkedIn" style="width: 24px; height: 24px;">
+                </a>
+            </div>
+            <!-- E-mail -->
+            <div class="email-text" style="margin-bottom: 10px; font-size: 0.9em;">
+                <a href="mailto:bruno.costa@psicovital.eco.br" style="color: #fff; text-decoration: none;">bruno.costa@psicovital.eco.br</a>
+            </div>
+        </div>
+    </footer>
+      <!-- Botão de Subir ao Topo -->
+<button id="scrollToTopBtn" class="scroll-to-top">▲</button>
+    <script src="script.js"></script>
+</body>
+</html>
