@@ -969,3 +969,239 @@ footer {
     color: #28a745;
     margin-top: 10px;
 }
+/* Estilo Geral da Seção */
+#profissionais {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#profissionais h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #32CD32;
+}
+
+/* Contêiner de Cards */
+.profissionais-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo dos Cards */
+.profissional-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background: #ffffff;
+    text-align: left;
+    padding: 20px;
+}
+
+.card-front img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-front h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-front p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Parte de Trás do Card */
+.card-back {
+    background: #32CD32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-back p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-back .btn-whatsapp {
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #32CD32;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-back .btn-whatsapp:hover {
+    background: #228B22;
+    color: white;
+}
+
+/* Efeito Flip */
+.profissional-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.profissional-card:hover .card-back {
+    transform: rotateY(0);
+}
+/* Container de Profissionais */
+.profissionais-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Flip Card Container */
+.card-flip {
+    perspective: 1000px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+/* Frente e Verso */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Frente do Card */
+.card-front {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    text-align: center;
+}
+
+.card-front img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-front h3 {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+.card-front p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Verso do Card */
+.card-back {
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9;
+    text-align: left;
+    padding: 20px;
+    transform: rotateY(180deg);
+}
+
+.card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-back ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Botão no Verso */
+.card-back button {
+    display: block;
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.card-back button:hover {
+    background-color: #1b5e20;
+}
+
+/* Efeito de Flip */
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0);
+}
+/* Estilos do Verso do Card */
+.card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-back ul li {
+    font-size: 0.9rem;
+    margin-bottom: 8px; /* Espaçamento maior entre itens */
+    line-height: 1.5;   /* Melhor espaçamento para leitura */
+    color: #2e7d32;     /* Cor do texto */
+}
+
+.card-back ul li strong {
+    color: #1b5e20; /* Destaque para o rótulo */
+}
+
+/* Botão no Verso */
+.card-back button {
+    margin-top: 15px; /* Espaçamento do botão para o texto */
+}
