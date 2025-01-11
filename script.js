@@ -102,3 +102,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const contactButton = document.getElementById('contact-button');
+    const contactCard = document.getElementById('contact-card');
+    const contactForm = document.getElementById('contact-form');
+    const thankYouMessage = document.querySelector('.thank-you-message');
+
+    // Exibe o mini card ao clicar no botão "Entre em Contato"
+    contactButton.addEventListener('click', () => {
+        const buttonRect = contactButton.getBoundingClientRect();
+        contactCard.style.top = `${buttonRect.bottom + window.scrollY}px`; // Posição abaixo do botão
+        contactCard.style.right = `${window.innerWidth - buttonRect.right}px`; // Alinhado à direita do botão
+        contactCard.style.display = 'block';
+    });
+
+    // Exibe a mensagem de agradecimento ao enviar o formulário
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Previne o comportamento padrão
+        contactForm.style.display = 'none'; // Esconde o formulário
+        thankYouMessage.style.display = 'block'; // Mostra a mensagem
+    });
+});
