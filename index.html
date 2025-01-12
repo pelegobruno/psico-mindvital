@@ -75,7 +75,7 @@
 
     <!-- Seção Serviços -->
     <section id="servicos">
-        <h2>Serviços</h2>
+        <h2 class="section-title">Serviços</h2>
         <div class="service-container">
             <div class="service-card">
                 <img src="https://psicoter.com.br/wp-content/uploads/2018/09/PSICOTERAPIA-INDIVIDUAL.png" alt="Psicoterapia Individual">
@@ -123,7 +123,7 @@
 
     <!-- Seção Comentários -->
     <section id="comentarios">
-        <h2>Comentários</h2>
+        <h2 class="section-title">Comentários</h2>
         <div class="comment">
             <p>"Psico Mindvital mudou minha vida! Os profissionais são incríveis."</p>
             <div class="stars">★★★★★</div>
@@ -138,7 +138,7 @@
 
     <!-- Seção Blog -->
     <section id="blog">
-        <h2>Blog</h2>
+        <h2 class="section-title">Blog</h2>
         <div class="blog-post">
             <h3>Como lidar com o estresse no trabalho</h3>
             <p>Descubra estratégias eficazes para gerenciar o estresse e melhorar sua saúde mental no ambiente de trabalho.</p>
@@ -153,7 +153,7 @@
 
     <!-- Seção Artigos -->
     <section id="artigos">
-        <h2>Artigos</h2>
+        <h2 class="section-title">Artigos</h2>
         <div class="article">
             <h3>Artigo 1: A importância da saúde mental</h3>
             <p>Explore como a saúde mental impacta todos os aspectos da vida e por que é crucial cuidar dela.</p>
@@ -166,56 +166,360 @@
         </div>
     </section>
 
-    <!-- Seção Profissionais -->
-    <section id="profissionais">
-        <h2>Profissionais</h2>
-        <div class="profissionais-container">
-            <!-- Card 1 -->
-            <div class="card-flip">
-                <!-- Frente do Card -->
-                <div class="card-front">
-                    <img src="https://via.placeholder.com/100" alt="Foto do Profissional">
-                    <h3>Dra. Ana Silva</h3>
-                    <p>Especialista em Terapia Familiar</p>
-                </div>
-                <!-- Verso do Card -->
-                <div class="card-back">
-                    <h3>Dra. Ana Silva</h3>
-                    <ul>
-                        <li><strong>Atendimento:</strong> Online</li>
-                        <li><strong>Idade:</strong> 29 anos</li>
-                        <li><strong>Estado:</strong> SP</li>
-                    </ul>
-                    <button onclick="window.location.href='https://wa.me/5551986875187'">Terapeuta aqui!</button>
-                </div>
-            </div>
+<!-- Seção Profissionais -->
+<section class="professionals" id="professionals">
+    <h2 class="specialists-title">Nossos Especialistas</h2>
     
-            <!-- Card 2 -->
-            <div class="card-flip">
-                <!-- Frente do Card -->
+    <!-- Cards dos Profissionais -->
+    <div class="cards">
+        <!-- Card Dr. Bruno Costa -->
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
                 <div class="card-front">
-                    <img src="./imagem/Brunno Costa.jpg" alt="Foto do Profissional">
+                    <img src="./imagem/Brunno Costa.jpg" alt="Dr. Bruno Costa" class="profile-img">
                     <h3>Dr. Bruno Costa</h3>
-                    <p>Especialista em Terapia Cognitiva</p>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Esportiva</div>
+                        <div class="specialty-item">TCC</div>
+                        <div class="specialty-item">Desenvolvimento Pessoal</div>
+                        <div class="specialty-item">Autoestima</div>
+                    </div>
                 </div>
-                <!-- Verso do Card -->
                 <div class="card-back">
-                    <h3>Dr. Bruno Costa</h3>
-                    <ul>
-                        <li><strong>Atendimento:</strong> Presencial / Online</li>
-                        <li><strong>Idade:</strong> 34 anos</li>
-                        <li><strong>Estado:</strong> RS</li>
-                    </ul>
-                    <button onclick="window.location.href='https://wa.me/5551986875187'">Terapeuta aqui!</button>
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Dr. Bruno Costa</h3>
+                            <span class="highlight">Psicólogo Esportivo</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-id-card"></i>
+                                <span>CRP: 07/54321</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Português | Espanhol</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>                        
+
+        <!-- Card Dra. Ana Silva -->
+        <div class="card feminino" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg" alt="Dra. Ana Silva" class="profile-img">
+                    <h3>Dra. Ana Silva</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Terapia Familiar</div>
+                        <div class="specialty-item">Autoestima</div>
+                        <div class="specialty-item">TCC</div>
+                        <div class="specialty-item">Ansiedade</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Dra. Ana Silva</h3>
+                            <span class="highlight">Terapeuta Familiar</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-id-card"></i>
+                                <span>CRP: 07/12345</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online e Presencial</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Português | Inglês</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divisor entre Profissionais e Estagiários -->
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <h3 class="divider-text">Estagiários</h3>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- Cards dos Estagiários -->
+    <div class="estagiarios-container">
+        <!-- Card Estagiária Maria Santos -->
+        <div class="card feminino" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" alt="Estagiária Maria Santos" class="profile-img">
+                    <h3>Maria Santos</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Infantil</div>
+                        <div class="specialty-item">Ansiedade</div>
+                        <div class="specialty-item">Orientação Vocacional</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Maria Santos</h3>
+                            <span class="highlight">Estagiária - 8º Semestre</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>UFRGS</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Estagiário Pedro Oliveira -->
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/confident-young-businessman-suit-standing-with-arms-folded_171337-18609.jpg" alt="Estagiário Pedro Oliveira" class="profile-img">
+                    <h3>Pedro Oliveira</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Social</div>
+                        <div class="specialty-item">Depressão</div>
+                        <div class="specialty-item">Autoestima</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Pedro Oliveira</h3>
+                            <span class="highlight">Estagiário - 9º Semestre</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>PUCRS</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Estagiária Julia Lima -->
+        <div class="card feminino" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/young-beautiful-woman-smart-casual-wear_273609-41024.jpg" alt="Estagiária Julia Lima" class="profile-img">
+                    <h3>Julia Lima</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Escolar</div>
+                        <div class="specialty-item">TDAH</div>
+                        <div class="specialty-item">Aprendizagem</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Julia Lima</h3>
+                            <span class="highlight">Estagiária - 7º Semestre</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>UFRGS</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Estagiário Lucas Ferreira -->
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/handsome-young-businessman-shirt-eyeglasses_85574-6228.jpg" alt="Estagiário Lucas Ferreira" class="profile-img">
+                    <h3>Lucas Ferreira</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Organizacional</div>
+                        <div class="specialty-item">Gestão de Pessoas</div>
+                        <div class="specialty-item">RH</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Lucas Ferreira</h3>
+                            <span class="highlight">Estagiário - 8º Semestre</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>PUCRS</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Estagiária Beatriz Santos -->
+        <div class="card feminino" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://img.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg" alt="Estagiária Beatriz Santos" class="profile-img">
+                    <h3>Beatriz Santos</h3>
+                    <div class="divider"></div>
+                    <div class="specialty-list">
+                        <div class="specialty-item">Psicologia Clínica</div>
+                        <div class="specialty-item">Terapia Cognitiva</div>
+                        <div class="specialty-item">Mindfulness</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <div class="back-header">
+                            <h3>Beatriz Santos</h3>
+                            <span class="highlight">Estagiária - 9º Semestre</span>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Atendimento Online</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Alegre - RS</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>UFRGS</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5551986875187?text=Olá,%20gostaria%20de%20atendimento" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Terapeuta Aqui
+                            </a>
+                            <a href="mailto:bruno.costa@psicovital.eco.br" class="btn-email">
+                                <i class="far fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                        
 
     <!-- Seção Chamada para Grupos de Estudos -->
     <section id="grupos-de-estudos">
         <div class="conteudo-destaque">
-            <h2>Participe dos Nossos Grupos de Estudos!</h2>
+            <h2 class="study-groups-title">Participe dos Nossos Grupos de Estudos!</h2>
             <p>
                 Estude de forma colaborativa, troque experiências e desenvolva-se profissionalmente em um ambiente enriquecedor 
                 e guiado por especialistas. Ideal para estagiários e profissionais que buscam se destacar na carreira.
