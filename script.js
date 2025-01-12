@@ -154,3 +154,76 @@ function toggleCard(card) {
     // Toggle da classe 'flipped' no card clicado
     card.classList.toggle('flipped');
 }
+function toggleCard(cardId) {
+    const card = document.getElementById(cardId);
+
+    if (card.style.display === "block") {
+        card.style.display = "none"; // Esconde o card
+    } else {
+        card.style.display = "block"; // Mostra o card
+    }
+}
+function toggleCard(cardId) {
+    // Fecha todos os cards primeiro
+    const allCards = document.querySelectorAll('.blog-card');
+    allCards.forEach(card => {
+        if (card.id !== cardId) {
+            card.style.display = 'none';
+        }
+    });
+
+    // Alterna a visibilidade do card clicado
+    const card = document.getElementById(cardId);
+    card.style.display = (card.style.display === 'block') ? 'none' : 'block';
+}
+// Função para abrir/fechar os cards
+function toggleCard(cardId) {
+    // Seleciona todos os cards
+    const cards = document.querySelectorAll('.blog-card');
+
+    // Fecha todos os cards
+    cards.forEach(card => {
+        if (card.id !== cardId) {
+            card.style.display = 'none'; // Fecha os outros cards
+        }
+    });
+
+    // Seleciona o card atual
+    const currentCard = document.getElementById(cardId);
+
+    // Alterna entre abrir e fechar o card atual
+    if (currentCard.style.display === 'block') {
+        currentCard.style.display = 'none'; // Fecha se estiver aberto
+    } else {
+        currentCard.style.display = 'block'; // Abre se estiver fechado
+    }
+}
+function toggleCard(cardId) {
+    // Fecha todos os cards
+    const cards = document.querySelectorAll('.blog-card');
+    cards.forEach(card => {
+        if (card.id !== cardId) {
+            card.style.display = 'none';
+        }
+    });
+
+    // Alterna a visibilidade do card clicado
+    const selectedCard = document.getElementById(cardId);
+    if (selectedCard.style.display === 'block') {
+        selectedCard.style.display = 'none';
+    } else {
+        selectedCard.style.display = 'block';
+    }
+}
+function toggleCard(cardId) {
+    const card = document.getElementById(cardId);
+    card.style.display = card.style.display === 'none' || card.style.display === '' ? 'block' : 'none';
+}
+function toggleCard(cardId) {
+    const card = document.getElementById(cardId);
+    card.style.display = card.style.display === 'none' || card.style.display === '' ? 'block' : 'none';
+}
+function toggleCard(cardId) {
+    const card = document.getElementById(cardId);
+    card.style.display = card.style.display === 'none' || card.style.display === '' ? 'block' : 'none';
+}
