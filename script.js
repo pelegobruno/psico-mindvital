@@ -123,3 +123,34 @@ document.addEventListener('DOMContentLoaded', function () {
         thankYouMessage.style.display = 'block'; // Mostra a mensagem
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card-profissional');
+    
+    cards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Previne o flip se clicar nos botões
+            if (e.target.tagName === 'A') return;
+            
+            // Remove a classe 'flipped' de todos os outros cards
+            cards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('flipped');
+                }
+            });
+            
+            // Toggle da classe 'flipped' no card clicado
+            this.classList.toggle('flipped');
+        });
+    });
+});
+function toggleCard(card) {
+    // Remove a classe 'flipped' de todos os outros cards
+    document.querySelectorAll('.card').forEach(otherCard => {
+        if (otherCard !== card) {
+            otherCard.classList.remove('flipped');
+        }
+    });
+    
+    // Toggle da classe 'flipped' no card clicado
+    card.classList.toggle('flipped');
+}
