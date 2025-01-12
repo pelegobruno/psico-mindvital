@@ -135,22 +135,125 @@
             <footer>— Cliente Satisfeito</footer>
         </div>
     </section>
-
     <!-- Seção Blog -->
     <section id="blog">
         <h2 class="section-title">Blog</h2>
-        <div class="blog-post">
-            <h3>Como lidar com o estresse no trabalho</h3>
-            <p>Descubra estratégias eficazes para gerenciar o estresse e melhorar sua saúde mental no ambiente de trabalho.</p>
-            <a href="#">Leia mais</a>
-        </div>
-        <div class="blog-post">
-            <h3>A importância da terapia familiar</h3>
-            <p>Entenda como a terapia familiar pode fortalecer os laços e melhorar a comunicação entre os membros da família.</p>
-            <a href="#">Leia mais</a>
+        <div class="blog-container">
+            <!-- Post 1 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Como lidar com o estresse no trabalho</h3>
+                <p class="blog-excerpt">Descubra estratégias eficazes para gerenciar o estresse no ambiente profissional.</p>
+                <button class="blog-link" onclick="toggleCard('card1')">Leia mais</button>
+                <div class="blog-card" id="card1">
+                    <p>O estresse no trabalho é um problema crescente que pode impactar a saúde mental e física. 
+                        Praticar técnicas como mindfulness e exercícios de respiração ajudam a gerenciar a pressão. 
+                        Estabeleça limites claros entre a vida profissional e pessoal, delegue tarefas sempre que possível 
+                        e não hesite em buscar apoio psicológico se necessário. Priorize a organização e estabeleça pausas regulares 
+                        durante o expediente.</p>
+                    <button class="close-card" onclick="toggleCard('card1')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="blog-post">
+                <h3 class="blog-title">A importância da terapia familiar</h3>
+                <p class="blog-excerpt">Entenda como fortalecer laços familiares com a ajuda da terapia.</p>
+                <button class="blog-link" onclick="toggleCard('card2')">Leia mais</button>
+                <div class="blog-card" id="card2">
+                    <p>A terapia familiar é uma abordagem que permite resolver conflitos e promover a comunicação eficaz entre os membros. 
+                        Ela oferece um espaço seguro para explorar padrões disfuncionais e reconstruir relacionamentos. Profissionais qualificados 
+                        utilizam técnicas como mediação, dinâmicas de grupo e escuta ativa, ajudando famílias a superar desafios como divórcios, luto ou 
+                        dificuldades financeiras.</p>
+                    <button class="close-card" onclick="toggleCard('card2')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Ansiedade e como tratá-la</h3>
+                <p class="blog-excerpt">Saiba como reconhecer os sinais de ansiedade e explorar tratamentos eficazes.</p>
+                <button class="blog-link" onclick="toggleCard('card3')">Leia mais</button>
+                <div class="blog-card" id="card3">
+                    <p>A ansiedade é caracterizada por preocupação excessiva, insônia e até sintomas físicos como batimentos cardíacos acelerados. 
+                        Práticas como a terapia cognitivo-comportamental (TCC) ajudam a identificar e reestruturar pensamentos negativos. 
+                        Técnicas de relaxamento, como meditação e exercícios físicos, auxiliam no controle dos sintomas. Medicamentos podem ser recomendados 
+                        em casos severos, mas sempre sob orientação médica.</p>
+                    <button class="close-card" onclick="toggleCard('card3')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="blog-post">
+                <h3 class="blog-title">A importância do autocuidado</h3>
+                <p class="blog-excerpt">Entenda como o autocuidado pode transformar seu bem-estar.</p>
+                <button class="blog-link" onclick="toggleCard('card4')">Leia mais</button>
+                <div class="blog-card" id="card4">
+                    <p>O autocuidado é um componente essencial para o equilíbrio emocional. Ele envolve práticas simples, como manter uma alimentação saudável, 
+                        dormir adequadamente e reservar momentos para lazer. Investir no seu bem-estar fortalece sua capacidade de enfrentar desafios e melhora a autoestima. 
+                        Não hesite em incluir atividades prazerosas e momentos de desconexão digital na sua rotina.</p>
+                    <button class="close-card" onclick="toggleCard('card4')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 5 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Como melhorar a autoestima</h3>
+                <p class="blog-excerpt">Dicas práticas para desenvolver uma relação mais positiva consigo mesmo.</p>
+                <button class="blog-link" onclick="toggleCard('card5')">Leia mais</button>
+                <div class="blog-card" id="card5">
+                    <p>A autoestima é construída por meio da valorização pessoal e autocompaixão. Comece praticando a gratidão e celebrando pequenas vitórias. 
+                        Evite comparações prejudiciais, foque em suas qualidades e não tenha medo de buscar ajuda de um terapeuta para trabalhar bloqueios emocionais. 
+                        Lembre-se: a autoestima é um processo contínuo.</p>
+                    <button class="close-card" onclick="toggleCard('card5')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 6 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Como lidar com o burnout</h3>
+                <p class="blog-excerpt">Aprenda a identificar os sinais de burnout e adotar medidas preventivas.</p>
+                <button class="blog-link" onclick="toggleCard('card6')">Leia mais</button>
+                <div class="blog-card" id="card6">
+                    <p>O burnout é um estado de exaustão emocional, física e mental causado por estresse crônico no trabalho. 
+                        Reconheça os sinais como desmotivação, irritabilidade e cansaço extremo. Priorize estabelecer uma rotina equilibrada, com pausas regulares, 
+                        e busque delegar tarefas sempre que possível. Técnicas de relaxamento, como yoga e meditação, são eficazes para aliviar os sintomas. 
+                        Se necessário, procure orientação de um profissional.</p>
+                    <button class="close-card" onclick="toggleCard('card6')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 7 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Como criar uma rotina saudável</h3>
+                <p class="blog-excerpt">Descubra como organizar sua rotina para ter mais saúde e produtividade.</p>
+                <button class="blog-link" onclick="toggleCard('card7')">Leia mais</button>
+                <div class="blog-card" id="card7">
+                    <p>Uma rotina saudável não apenas melhora sua produtividade, mas também contribui para o bem-estar geral. 
+                        Inclua horários fixos para dormir e acordar, refeições balanceadas e atividades físicas. Reserve tempo para hobbies e práticas que ajudem a reduzir o estresse, 
+                        como leitura ou meditação. Use aplicativos de organização para ajudar a manter o foco e monitorar seus progressos.</p>
+                    <button class="close-card" onclick="toggleCard('card7')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 8 -->
+            <div class="blog-post">
+                <h3 class="blog-title">A importância do sono</h3>
+                <p class="blog-excerpt">Como o sono afeta a saúde e a qualidade de vida.</p>
+                <button class="blog-link" onclick="toggleCard('card8')">Leia mais</button>
+                <div class="blog-card" id="card8">
+                    <p>O sono é fundamental para a recuperação física e mental. Dormir bem fortalece o sistema imunológico, melhora a memória e a concentração. 
+                        Estabeleça uma rotina de sono consistente, crie um ambiente tranquilo e evite estimulantes antes de dormir. Se necessário, consulte um especialista para tratar distúrbios do sono.</p>
+                    <button class="close-card" onclick="toggleCard('card8')">Fechar</button>
+                </div>
+            </div>
+            <!-- Post 9 -->
+            <div class="blog-post">
+                <h3 class="blog-title">Exercícios físicos e saúde mental</h3>
+                <p class="blog-excerpt">Como a atividade física pode melhorar o bem-estar mental.</p>
+                <button class="blog-link" onclick="toggleCard('card9')">Leia mais</button>
+                <div class="blog-card" id="card9">
+                    <p>A prática regular de exercícios físicos libera endorfinas, hormônios que promovem a sensação de bem-estar. 
+                        Atividades como caminhada, corrida ou yoga ajudam a reduzir o estresse e a ansiedade. 
+                        Encontre uma atividade que você goste, estabeleça metas realistas e mantenha-se ativo para melhorar sua saúde mental.</p>
+                    <button class="close-card" onclick="toggleCard('card9')">Fechar</button>
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <!-- Seção Artigos -->
     <section id="artigos">
         <h2 class="section-title">Artigos</h2>
